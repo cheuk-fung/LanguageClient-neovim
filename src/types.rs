@@ -783,7 +783,8 @@ impl ToDisplay for Hover {
                     } else {
                         ms.to_display()
                     }
-                }).collect(),
+                })
+                .collect(),
             HoverContents::Markup(ref mc) => mc.to_display(),
         }
     }
